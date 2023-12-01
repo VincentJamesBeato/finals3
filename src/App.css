@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.cloud1 {
+  width: 20%; /* Adjust the size of the cloud */
+  animation: cloudMove 20s linear infinite; /* Adjust the duration as needed */
+  top: 15%;
+}
+
+.cloud2 {
+  width: 15%;
+  animation: cloudMove 25s linear infinite;
+  top: 25%;
+}
+
+.cloud3 {
+  width: 25%;
+  animation: cloudMove 17s linear infinite;
+  top: 50%;
+}
+
+.cloud4 {
+  width: 18%;
+  animation: cloudMove 23s linear infinite;
+  top: 75%;
+}
+
+@keyframes cloudMove {
+  from {
+    transform: translateX(100vw); /* Move the cloud off-screen to the right */
+  }
+  to {
+    transform: translateX(-100vw); /* Move the cloud off-screen to the left */
+  }
+}
